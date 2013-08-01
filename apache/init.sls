@@ -13,7 +13,7 @@ apache2:
 /var/www/index.html:
 {% endif %}
   file.managed:
-    - source: salt://httpd/index.html
+    - source: salt://apache/index.html
     - mode: 644
     - template: jinja
     - require:
